@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 @font-face {
     src: url("CursedTimerUlil-Aznm.ttf");
     font-family: "Cursed Timer Ulil";
@@ -8,26 +18,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 30px;
+    background-color: #1B244A;
 }
 
 .container {
+    margin: auto;
     display: flex;
     justify-content: space-around;
     padding: 50px;
     max-width: 600px;
-    background-color: #1B244A;
+}
+
+h3 {
     color: #eee;
 }
 
 #home-points,
+#guest-points,
+button {
+    font-family: Cursed Timer Ulil, sans-serif;
+}
+
+
+#home-points,
 #guest-points {
     background-color: #000;
-    margin: 0px 0px 30px 0px ;
+    margin: 0px 0px 30px 0px;
     padding: 35px 35px;
     color: #F94F6D;
     text-align: center;
-    font-size: 70px; 
-    font-family: Cursed Timer Ulil;
+    font-size: 70px;
 }
 
 button {
@@ -37,5 +57,11 @@ button {
     margin: 2px;
     background-color: #1B244A;
     color: #9AABD8;
-    font-family: Cursed Timer Ulil;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #9AABD8;
+    color: #1B244A;
 }
